@@ -6,6 +6,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
+    "build:client": "ng build --aot",
+    "build:server:ng": "ng build  --app server1 --aot",
+    "build:server:ts": "tsc -p ./src/tsconfig.exec.json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -23,7 +26,8 @@
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "@angular/platform-server": "^5.2.0"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.0",
